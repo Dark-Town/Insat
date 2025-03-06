@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,7 @@
             margin: 20px;
             max-width: 600px;
         }
-        .btn {
+        .button {
             background-color: #ff007b;
             color: white;
             border: none;
@@ -45,78 +46,20 @@
             cursor: pointer;
             font-size: 16px;
             margin: 10px 0;
-            transition: background-color 0.3s, transform 0.3s;
-            position: relative;
-            overflow: hidden;
+            transition: background-color 0.3s;
         }
-        .btn:hover {
+        .button:hover {
             background-color: #e6006d;
-            transform: translateY(-5px); /* Move button up on hover */
-        }
-        .btn:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300%;
-            height: 300%;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            transition: transform 0.5s;
-            z-index: 0;
-        }
-        .btn:hover:before {
-            transform: translate(-50%, -50%) scale(1);
-        }
-        .btn span {
-            position: relative; /* Position text above the pseudo-element */
-            z-index: 1;
-        }
-        .info-text {
-            color: #555;
-            margin: 10px 0;
         }
         .footer {
-    background-color: #fff;
-    width: 100%;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.footer-item {
-    text-align: center;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.footer-item i {
-    font-size: 24px;
-    color: #ff007b;
-    margin-bottom: 5px; /* Add some space below the icon */
-}
-
-.footer-item p {
-    color: #555;
-    margin: 0;
-}
-
-.footer-item:hover {
-    color: #ff007b; /* Change text color on hover */
-    animation: shake 0.5s; /* Add shake animation on hover */
-}
-
-/* Shaking animation */
-@keyframes shake {
-    0% { transform: translate(1px, 0); }
-    25% { transform: translate(-1px, 0); }
-    50% { transform: translate(1px, 0); }
-    75% { transform: translate(-1px, 0); }
-    100% { transform: translate(0, 0); }
-}
+            background-color: #fff;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
         .footer-item {
             text-align: center;
@@ -125,17 +68,6 @@
             font-size: 24px;
             color: #ff007b;
         }
-
-        .footer {
-    background-color: #fff;
-    width: 100%;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
@@ -143,91 +75,42 @@
 <header>
     <h1> ✌︎𝐑𝐄𝐀𝐋 𝐁𝐎𝐎𝐒𝐓 𝐒𝐎𝐂𝐈𝐀𝐋 𝐌𝐄𝐃𝐈𝐀 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𖣘 </h1>
     <h2>☻︎𝑁𝑜 𝑙𝑜𝑔𝑖𝑛 𝑅𝑒𝑞𝑢𝑖𝑟𝑒𝑑㋛︎
-        ❣︎𝐴𝑐𝑡𝑖𝑣𝑒 𝑅𝑒𝑎𝑙 𝑈𝑠𝑒𝑟𝑠❥︎
-        ❦︎𝐼𝑛𝑠𝑡𝑎𝑛𝑡 𝐷𝑒𝑙𝑖𝑣𝑒𝑟☀︎𓆉︎
-        ☏︎24/7 𝐶𝑢𝑠𝑡𝑜𝑚 𝑆𝑢𝑝𝑝𝑜𝑟𝑡✔︎</h2>
+
+❣︎𝐴𝑐𝑡𝑖𝑣𝑒 𝑅𝑒𝑎𝑙 𝑈𝑠𝑒𝑟𝑠❥︎
+
+❦︎𝐼𝑛𝑠𝑡𝑎𝑛𝑡 𝐷𝑒𝑙𝑖𝑣𝑒𝑟☀︎𓆉︎
+
+☏︎24/7 𝐶𝑢𝑠𝑡𝑜𝑚 𝑆𝑢𝑝𝑝𝑜𝑟𝑡✔︎</h2>
 </header>
 
 <div class="content">
     <p>☞︎︎︎𝑇𝑜𝑑𝑎𝑦𝑠 𝐹𝑟𝑒𝑒 𝑊ℎ𝑎𝑡𝑠𝑎𝑝𝑝 𝑏𝑜𝑡 𝐷𝑒𝑝𝑙𝑜𝑦 𝐺𝑖𝑣𝑒𝑤𝑎𝑦☟︎︎︎
-        𖣘𝑆ℎ𝑎𝑟𝑒   𝑡ℎ𝑖𝑠 𝑙𝑖𝑛𝑘 𝑡𝑜 5 𝑠𝑜𝑐𝑖𝑎𝑙 𝑚𝑒𝑑𝑖𝑎 𝑝𝑙𝑎𝑡𝑓𝑜𝑟𝑚 𝑜𝑟 𝑖𝑛𝑣𝑖𝑡𝑒 𝑓𝑟𝑖𝑒𝑛𝑑𝑠 ,𝑓𝑎𝑚𝑖𝑙𝑦 & 𝑤𝑖𝑛 𝑓𝑟𝑒𝑒 𝑄𝑢𝑒𝑒𝑛 𝑅𝑢𝑣𝑎 𝐼𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑡 𝑊ℎ𝑎𝑡𝑠𝑎𝑝𝑝 𝑏𝑜𝑡 𝑊𝑖𝑡ℎ 0 𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑒 , 500𝑚𝑏 𝑟𝑎𝑚 ᯾ 𝐹𝑎𝑠𝑡 𝑎𝑠 𝑎 𝑟𝑎𝑐𝑒 𝑐𝑎𝑟  🥰 ☾︎ 𝑇𝑜𝑑𝑎𝑦 𝑖𝑠 𝑦𝑜𝑢𝑟 𝑙𝑢𝑐𝑘𝑦 𝑑𝑎𝑦 𝑠𝑖𝑟 𝑑𝑜𝑤𝑛𝑙𝑜𝑎𝑑 𝑞𝑢𝑒𝑒𝑛 𝑟𝑢𝑣𝑎 𝑎𝑖 𝑏𝑜𝑡 𝑓𝑖𝑙𝑒 𝑓𝑜𝑟 𝑓𝑟𝑒𝑒 𝑎𝑛𝑑 𝑑𝑒𝑝𝑙𝑜𝑦 ☽︎</p>
+ 𖣘𝑆ℎ𝑎𝑟𝑒   𝑡ℎ𝑖𝑠 𝑙𝑖𝑛𝑘 𝑡𝑜 5 𝑠𝑜𝑐𝑖𝑎𝑙 𝑚𝑒𝑑𝑖𝑎 𝑝𝑙𝑎𝑡𝑓𝑜𝑟𝑚 𝑜𝑟 𝑖𝑛𝑣𝑖𝑡𝑒 𝑓𝑟𝑖𝑒𝑛𝑑𝑠 ,𝑓𝑎𝑚𝑖𝑙𝑦 & 𝑤𝑖𝑛 𝑓𝑟𝑒𝑒 𝑄𝑢𝑒𝑒𝑛 𝑅𝑢𝑣𝑎 𝐼𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑡 𝑊ℎ𝑎𝑡𝑠𝑎𝑝𝑝 𝑏𝑜𝑡 𝑊𝑖𝑡ℎ 0 𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑒 , 500𝑚𝑏 𝑟𝑎𝑚 ᯾ 𝐹𝑎𝑠𝑡 𝑎𝑠 𝑎 𝑟𝑎𝑐𝑒 𝑐𝑎𝑟  🥰 ☾︎ 𝑇𝑜𝑑𝑎𝑦 𝑖𝑠 𝑦𝑜𝑢𝑟 𝑙𝑢𝑐𝑘𝑦 𝑑𝑎𝑦 𝑠𝑖𝑟 𝑑𝑜𝑤𝑛𝑙𝑜𝑎𝑑 𝑞𝑢𝑒𝑒𝑛 𝑟𝑢𝑣𝑎 𝑎𝑖 𝑏𝑜𝑡 𝑓𝑖𝑙𝑒 𝑓𝑜𝑟 𝑓𝑟𝑒𝑒 𝑎𝑛𝑑 𝑑𝑒𝑝𝑙𝑜𝑦 ☽︎</p>
     <p>☟︎︎︎Click If You Need More Likes☟︎︎︎.</p>
-    
-    <h2>Get Instagram Likes</h2>
-    <button class="btn" onclick="window.location.href='https://wa.me/message/LMYVBIUMYDBDF1';"><span>Get Free Likes</span></button>
-    <p class="info-text">Order starts Instant.</p>
-
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh; /* Full height of the viewport */
-            margin: 0;
-        }
-
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px; /* Space between buttons */
-        }
-
-        .btn {
-            background-color: #ff007b;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s, background-color 0.3s;
-            text-decoration: none; /* Remove underline from links */
-            display: inline-block; /* Allow for padding */
-        }
-
-        .btn:hover {
-            background-color: #e6006d;
-            transform: scale(1.05); /* Slightly increase size on hover */
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300%;
-            height: 300%;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            transition: transform 0.5s;
-            z-index: 0;
-        }
-
-        .btn:hover::before {
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .btn span {
-            position: relative; /* Position text above the pseudo-element */
-            z-index: 1;
-        }
-    </style>
-</head>
-<body>
-
-<div class="button-container">
-    <a href="https://example.com/likes" class="btn"><span>Get Free Likes</span></a>
-    <a href="https://example.com/followers" class="btn"><span>Get Free Followers</span></a>
+    <h2>Get Instagram Likes</h2>        <button class="btn" onclick="window.location.href='https://wa.me/message/LMYVBIUMYDBDF1';">Get Free Likes</button>        <p class="info-text">Order starts Instant.</p>
+   <h2>Get Instagram Followers</h2>        <button class="btn" onclick="window.location.href='https://wa.me/263788533181';">Get Free Followers</button>        <p class="info-text">Order starts Instant.</p>
+</div>
+<div class="content">
+<p>𖤍𝐑𝐄𝐀𝐋 𝐁𝐎𝐎𝐒𝐓 𝐒𝐎𝐂𝐈𝐀𝐋 𝐌𝐄𝐃𝐈𝐀 𝐀𝐂𝐂𝐎𝐔𝐍𝐓☟︎︎︎
+   𖤍𝑇𝑖𝑘𝑡𝑜𝑘 𝑉𝑖𝑒𝑤𝑠 , 𝑇𝑖𝑘𝑡𝑜𝑘 𝐹𝑜𝑙𝑙𝑜𝑤𝑒𝑟𝑠 , 𝑙𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚 𝑓𝑜𝑙𝑙𝑜𝑤𝑒𝑟𝑠 ,𝑊𝑒𝑏 𝐷𝑒𝑠𝑖𝑔𝑛 , 𝑃ℎ𝑝 , ℎ𝑡𝑚𝑙 𝑎𝑛𝑑 𝑓𝑖𝑛𝑑 𝑚𝑜𝑟𝑒 𝑜𝑛 𝑜𝑢𝑟 𝑊𝑒𝑏𝑆𝑖𝑡𝑒 ✍︎https://realboost.ezyro.com , https://realboost.vercel.app & https://zw-boost-my-account.netlify.app🇿🇼👈
+</div>
+<div class="footer">
+    <div class="footer-item">
+        <i class="fas fa-heart"></i>
+        <p>Free Instagram Likes</p>
+    </div>
+    <div class="footer-item">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Buy Instagram Likes</p>
+    </div>
+    <div class="footer-item">
+        <i class="fas fa-star"></i>
+        <p>More Free Services</p>
+    </div>
+    <div class="footer-item">
+        <i class="fas fa-chart-line"></i>
+    </div>
 </div>
 
 </body>
-</html>
+        </html>
