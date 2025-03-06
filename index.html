@@ -78,14 +78,45 @@
             margin: 10px 0;
         }
         .footer {
-            background-color: #fff;
-            width: 100%;
-            padding: 15px 0;
-            display: flex;
-            justify-content: space-around;
-            position: fixed;
-            bottom: 0;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-item {
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-item i {
+    font-size: 24px;
+    color: #ff007b;
+    margin-bottom: 5px; /* Add some space below the icon */
+}
+
+.footer-item p {
+    color: #555;
+    margin: 0;
+}
+
+.footer-item:hover {
+    color: #ff007b; /* Change text color on hover */
+    animation: shake 0.5s; /* Add shake animation on hover */
+}
+
+/* Shaking animation */
+@keyframes shake {
+    0% { transform: translate(1px, 0); }
+    25% { transform: translate(-1px, 0); }
+    50% { transform: translate(1px, 0); }
+    75% { transform: translate(-1px, 0); }
+    100% { transform: translate(0, 0); }
+}
         }
         .footer-item {
             text-align: center;
@@ -93,6 +124,17 @@
         .footer-item i {
             font-size: 24px;
             color: #ff007b;
+        }
+
+        .footer {
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -118,3 +160,21 @@
     <h2>Get Instagram Followers</h2>
     <button class="btn" onclick="window.location.href='https://wa.me/message/LMYVBIUMYDBDF1';"><span>Get Free Followers</span></button>
     <p class="info-text">Order...
+        <div class="footer">
+    <div class="footer-item">
+        <i class="fas fa-heart"></i>
+        <p>Free Instagram Likes</p>
+    </div>
+    <div class="footer-item">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Buy Instagram Likes</p>
+    </div>
+    <div class="footer-item">
+        <i class="fas fa-star"></i>
+        <p>More Free Services</p>
+    </div>
+    <div class="footer-item">
+        <i class="fas fa-chart-line"></i>
+        <p>Analytics</p>
+    </div>
+        </div>
