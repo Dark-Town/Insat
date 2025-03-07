@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaking Button Advertisement</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            height: 100vh; /* Full height of the viewport */
+            margin: 0;
+        }
+
+        .ad-image {
+            width: 100%; /* Responsive image */
+            max-width: 500px; /* Max width for larger screens */
+            margin-bottom: 20px; /* Space between image and button */
+            animation: shake 0.5s infinite; /* Shaking animation */
+        }
+
+        .btn {
+            background-color: #ff007b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px; /* Rounded button */
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Allow for padding */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .btn:hover {
+            background-color: #e6006d;
+            transform: translateY(-3px); /* Slightly lift button on hover */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+        }
+
+        /* Shaking animation */
+        @keyframes shake {
+            0% { transform: translate(1px, 0); }
+            25% { transform: translate(-1px, 0); }
+            50% { transform: translate(1px, 0); }
+            75% { transform: translate(-1px, 0); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+
+<img src="https://lf19-bot-connector-sign.coze.com/obj/bot-studio-bot-connector-us/message_resources/11000007/photo/va/7377648780620922885/file_photo_9e3f2729?lk3s=fd1f132d&x-expires=1772882983&x-signature=BuJEhWPFJIxyT8Y9xFbbAJHRS9E%3D" alt="Advertisement" class="ad-image">
+
+<a href="https://example.com" class="btn">Click Here for More Info</a>
+
+</body>
+</html>
